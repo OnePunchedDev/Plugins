@@ -204,13 +204,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await event.edit(f"{txt}\n**Error log:**\n`{error}`")
             return repo.__del__()
         build_status = app.builds(order_by="created_at", sort="desc")[0]
-        if build_status.status == "failed":
-            await event.edit(
-                "`Build failed ⚠️`"
-            )
-            await asyncio.sleep(5)
-            return await event.delete()
-        await event.edit(f"**Your Hêllẞø† Is UpToDate**\n\n**Version :**  __{hell_ver}__\n**Oɯɳҽɾ :**  {hell_mention}")
+
     else:
         await event.edit("**Please set up**  `HEROKU_API_KEY`  **from heroku to update!**")
     return
