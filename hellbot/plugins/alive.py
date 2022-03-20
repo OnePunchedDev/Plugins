@@ -13,7 +13,6 @@ from . import *
 ALIVE_TEMP = """
 <b><i>🔥🔥BlueFlame🔥🔥</b></i>
 ╭──────────────
-┣─ <b>» Telethon ~</b> <i>{}</i>
 ┣─ <b>» Sudo ~</b> <i>{}</i>
 ┣─ <b>» Uptime ~</b> <i>{}</i>
 ┣─ <b>» Ping ~</b> <i>{}</i>
@@ -23,7 +22,6 @@ ALIVE_TEMP = """
 
 msg = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
-<b>Telethon ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
