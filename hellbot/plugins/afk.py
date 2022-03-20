@@ -154,7 +154,7 @@ async def _(event):
         if owo == "":
             addgvar("AFK", "YES")
             x = await event.client.send_message(
-                event.chat_id, f"**I'm going afk🚶**", file=hellpic_1)
+                event.chat_id, f"**I'll be back later, going AFK..**", file=hellpic_1)
             try:
                 await unsave_gif(event, x)
                 xy = await event.client.send_message(
@@ -170,7 +170,7 @@ async def _(event):
         else:
             addgvar("AFK", "YES")
             x = await event.client.send_message(
-                event.chat_id, f"**I'm going afk🚶**\n\n**Because :** `{reason_1}`", file=hellpic_1)
+                event.chat_id, f"**I'm going AFK**\n\n**Because :** `{reason_1}`", file=hellpic_1)
             try:
                 await unsave_gif(event, x)
                 xy = await event.client.send_message(
@@ -200,7 +200,7 @@ if H2:
         if "#" not in current_message and gvarstat("AFK2") == "YES":
             hellbot = await event.client.send_message(
                 event.chat_id,
-                "__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `"
+                "__**I'm back now.**__\nNo Longer AFK.\n⏱️ Was afk for: `"
                 + total_afk_time
                 + "`", file=hellpic_2
             )
@@ -287,7 +287,7 @@ if H2:
             if owo == "":
                 addgvar("AFK2", "YES")
                 x = await event.client.send_message(
-                    event.chat_id, f"**I'm going afk🚶**", file=hellpic_2)
+                    event.chat_id, f"**I have to go, laters!**", file=hellpic_2)
                 try:
                     await unsave_gif(event, x)
                     xy = await event.client.send_message(
@@ -303,7 +303,7 @@ if H2:
             else:
                 addgvar("AFK2", "YES")
                 x = await event.client.send_message(
-                    event.chat_id, f"**I'm going afk🚶**\n\n**Because :** `{reason_2}`", file=hellpic_2)
+                    event.chat_id, f"**I'll be back later.**\n\n**Because :** `{reason_2}`", file=hellpic_2)
                 try:
                     await unsave_gif(event, x)
                     xy = await event.client.send_message(
@@ -333,7 +333,7 @@ if H3:
         if "#" not in current_message and gvarstat("AFK3") == "YES":
             hellbot = await event.client.send_message(
                 event.chat_id,
-                "__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `"
+                "__**Finally back.**__\nNo Longer AFK.\n⏱️ Was afk for: `"
                 + total_afk_time
                 + "`", file=hellpic_3
             )
@@ -420,7 +420,7 @@ if H3:
             if owo == "":
                 addgvar("AFK3", "YES")
                 x = await event.client.send_message(
-                    event.chat_id, f"**I'm going afk🚶**", file=hellpic_3)
+                    event.chat_id, f"**I'm going AFK now.**", file=hellpic_3)
                 try:
                     await unsave_gif(event, x)
                     xy = await event.client.send_message(
@@ -466,7 +466,7 @@ if H4:
         if "#" not in current_message and gvarstat("AFK4") == "YES":
             hellbot = await event.client.send_message(
                 event.chat_id,
-                "__**Back to Virtual World!**__\nNo Longer AFK.\n⏱️ Was afk for: `"
+                "__**I am back now, yep.**__\nNo Longer AFK.\n⏱️ Was afk for: `"
                 + total_afk_time
                 + "`", file=hellpic_4
             )
