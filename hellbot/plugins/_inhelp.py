@@ -168,8 +168,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 )
 
         elif event.query.user_id in auth and query == "pm_warn":
-            CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "**You Have Trespassed To My Master's PM!\nThis Is Illegal And Regarded As Crime.**"
-            HELL_FIRST = "**🔥 Hêllẞø† Prîvã†é Sêçürïty Prø†öçõl 🔥**\n\nHello!! Welcome to {}'s PM. This is an automated message.\n\n{}".format(hell_mention, CSTM_PMP)
+            CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or "**Hope you asked to DM!\nOr else you will be blocked and reported.**"
+            HELL_FIRST = "**.:Advanced security protocol enganged:.**\n\nHello!! Welcome to {}'s inbox.\n\n{}".format(hell_mention, CSTM_PMP)
             a = gvarstat("PMPERMIT_PIC")
             pic_list = []
             if a:
@@ -179,7 +179,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://telegra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://telegra.ph/file/e3c55f378b1f9f90875cc.mp4"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -259,7 +259,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         if event.query.user_id in auth:
             reply_pop_up_alert = "This is for Other Users..."
         else:
-            reply_pop_up_alert = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_pop_up_alert = "🔰 This is a personal shield against spammers. Should you abuse messaging me, you'll be blocked and reported."
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -270,7 +270,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             reply_pop_up_alert = "This is for other users!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
-            await event.edit("✅ **Request Registered** \n\nMy master will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!")
+            await event.edit("✅ **Request Registered** \n\nI will check your message shortly.\n😐 Until then don't spam and be patient.")
             target = await event.client(GetFullUserRequest(event.query.user_id))
             first_name = html.escape(target.user.first_name)
             if first_name is not None:
@@ -313,7 +313,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "You are not authorized to use me! \n© Hêllẞø† ™"
+            reply_pop_up_alert = "You are not authorized to use me!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         
 
@@ -324,9 +324,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
-            await event.edit(f"**⚜️ Hêllẞø† Mêñû Prõvîdêr ìs ñôw Çlösëd ⚜️**\n\n**Bot Of :**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})", buttons=veriler, link_preview=False)
+            await event.edit(f"**Menu is closed.", buttons=veriler, link_preview=False)
         else:
-            reply_pop_up_alert = "You are not authorized to use me! \n© Hêllẞø† ™"
+            reply_pop_up_alert = "You are not authorized to use me!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
    
 
@@ -348,7 +348,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me!", cache_time=0, alert=True)
 
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)")))
@@ -375,7 +375,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me!", cache_time=0, alert=True)
 
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"commands\[(.*)\[(\d*)\]\]\((.*)\)")))
@@ -419,7 +419,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
+            return await event.answer("You are not authorized to use me!", cache_time=0, alert=True)
 
 
 # hellbot

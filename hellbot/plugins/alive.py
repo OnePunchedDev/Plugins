@@ -12,7 +12,6 @@ from . import *
 
 ALIVE_TEMP = """
 <b><i>🔥🔥BlueFlame🔥🔥</b></i>
-<i><b>↼ Øwñêr ⇀</i></b> : 『 <a href='tg://user?id={}'>{}</a> 』
 ╭──────────────
 ┣─ <b>» Telethon ~</b> <i>{}</i>
 ┣─ <b>» Sudo ~</b> <i>{}</i>
