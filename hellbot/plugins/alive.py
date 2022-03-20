@@ -11,16 +11,15 @@ from . import *
 #-------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>🔥🔥Lucyy🔥🔥</b></i>
+<b><i>🔥🔥BlueFlame🔥🔥</b></i>
 <i><b>↼ Øwñêr ⇀</i></b> : 『 <a href='tg://user?id={}'>{}</a> 』
 ╭──────────────
 ┣─ <b>» Telethon ~</b> <i>{}</i>
-┣─ <b>» Hêllẞø† ~</b> <i>{}</i>
 ┣─ <b>» Sudo ~</b> <i>{}</i>
 ┣─ <b>» Uptime ~</b> <i>{}</i>
 ┣─ <b>» Ping ~</b> <i>{}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[ †hê Hêllẞø† ]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/ExcaliburChat'>[ Excalibur ]</a> «««</i></b>
 """
 
 msg = """{}\n
