@@ -218,10 +218,10 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ A bot for fun ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Netwprk", "https://t.me/hellbot_network")],
+                    [Button.url("📑 Repo 📑", "https://github.com/rick/roll")],
+                    [Button.url("HellBot Netwprk", "https://t.me/ExcaliburChat")],
                 ],
             )
 
