@@ -236,16 +236,16 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         else:
             result = builder.article(
-                "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                "@blueflame",
+                text="""**Hey I'm a bot for fun \nThere's more info about me below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_HellBot"),
-                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/hellbot_chat"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/PokemonCenter"),
+                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/ExcaliburChat"),
                     ],
                     [
-                        custom.Button.url("✨ REPO ✨", "https://github.com/The-HellBot/HellBot"),
-                        custom.Button.url("🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"),
+                        custom.Button.url("✨ REPO ✨", "https://github.com/rick/roll"),
+                        custom.Button.url("🔰 TUTORIAL 🔰", "https://youtu.be/dQw4w9WgXcQ"),
                     ],
                 ],
                 link_preview=False,
