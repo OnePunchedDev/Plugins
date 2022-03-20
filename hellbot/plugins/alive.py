@@ -15,7 +15,7 @@ ALIVE_TEMP = """
 <i><b>↼ Øwñêr ⇀</i></b> : 『 <a href='tg://user?id={}'>{}</a> 』
 ╭──────────────
 ┣─ <b>» Telethon ~</b> <i>{}</i>
-┣─ <b>» Bot ~</b> <i>{}</i>
+┣─ <b>» Hêllẞø† ~</b> <i>{}</i>
 ┣─ <b>» Sudo ~</b> <i>{}</i>
 ┣─ <b>» Uptime ~</b> <i>{}</i>
 ┣─ <b>» Ping ~</b> <i>{}</i>
