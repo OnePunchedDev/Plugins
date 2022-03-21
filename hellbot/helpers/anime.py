@@ -356,7 +356,7 @@ async def get_anilist(qdb, page):
         return [f"No results Found"]
     data = result["data"]["Page"]["media"][0]
     # pylint: disable=possibly-unused-variable
-    chnl = "[†hê Hêllẞø†](https://t.me/Its_Hellbot)"
+    chnl = "[Excalibur Chat](https://t.me/ExcaliburChat)"
     idm = data.get("id")
     idmal = data.get("idMal")
     romaji = data["title"]["romaji"]
