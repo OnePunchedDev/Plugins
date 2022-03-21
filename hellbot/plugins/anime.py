@@ -119,7 +119,7 @@ async def _(event):
     query = event.text[8:]
     hell = await eor(event, f"__Searching airing details for__ `{query}`")
     if query == "":
-        return await eod(hell, "Give anime name to seaech airing information.")
+        return await eod(hell, "Give anime name to search airing information.")
     vars_ = {"search": query}
     if query.isdigit():
         vars_ = {"id": int(query), "asHtml": True}

@@ -158,17 +158,17 @@ async def _(event):
                 pass
 
 
-@hell_cmd(pattern="adwaifu(?:\s|$)([\s\S]*)")
+@hell_cmd(pattern="adaw(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autowaifu works in Groups Only !!")
         return
     if is_harem(str(event.chat_id)):
-        await eod(event, "This Chat is Already In AutoWaifu Database !!")
+        await eod(event, "already active in _0100100101")
         return
     add_grp(str(event.chat_id))
-    await eod(event, f"**Added Chat** {event.chat.title} **With Id** `{event.chat_id}` **To Autowaifu Database.**")
-
+    await eod(event, f"**oh yeah**`{event.chat_id}` 0100100101")
+#original text up here was: "**Added Chat** {event.chat.title} **With Id** `{event.chat_id}` **To Autowaifu Database.**"
 
 @hell_cmd(pattern="adhusb(?:\s|$)([\s\S]*)")
 async def _(event):
@@ -182,7 +182,7 @@ async def _(event):
     await eod(event, f"**Added Chat** {event.chat.title} **With Id** `{event.chat_id}` **To AutoHusbando Database.**")
 
 
-@hell_cmd(pattern="rmwaifu(?:\s|$)([\s\S]*)")
+@hell_cmd(pattern="rmaw(?:\s|$)([\s\S]*)")
 async def _(event):
     if not event.is_group:
         await eod(event, "Autowaifu works in groups only !!")
@@ -191,8 +191,8 @@ async def _(event):
         await eod(event, "Autowaifu was already disabled here.")
         return
     rm_grp(str(event.chat_id))
-    await eod(event, f"**Removed Chat** {event.chat.title} **With Id** `{event.chat_id}` **From AutoWaifu Database.**")
-
+    await eod(event, f"So what i removed myself")
+#original code up here: "**Removed Chat** {event.chat.title} **With Id** `{event.chat_id}` **From AutoWaifu Database.**"
 
 @hell_cmd(pattern="rmhusb(?:\s|$)([\s\S]*)")
 async def _(event):
